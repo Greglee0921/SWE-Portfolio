@@ -1,5 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&family=Oswald:wght@700&family=Roboto:wght@700&display=swap');
+
 :root {
-  --max-width: 1100px;
+
+  --font-base: 'Nunito Sans', sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+
+  --raisin-black: #212130;
+  --gainsboro: #e1e6e9;
+  --chestnut: #974A36;
+  --brown-sugar: #bb6944;
+  --bole: #6A3932;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+
+  /* --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
@@ -103,5 +129,5 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
-  }
+  } */
 }
