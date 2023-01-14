@@ -17,7 +17,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div>
+      <div className={styles.socials}>
         <SocialIcon
           url="https://www.linkedin.com/in/gregorylee7/"
           fgColor='gray'

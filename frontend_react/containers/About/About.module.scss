@@ -1,0 +1,37 @@
+.aboutProfile {
+
+  display: flex;
+  justify-content: space-between;
+  padding: 5em;
+
+}
+
+.aboutImg {
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+
+  margin: 10px 50px 10px 0px;
+}
+
+.aboutInfo {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 40px;
+    margin: 0px 0px 20px;
+
+    span {
+      color: var(--brown-sugar);
+    }
+  }
+
+  p {
+    box-sizing: border-box;
+    margin: 0px 0px 20px;
+    font-size: 20px;
+  }
+
+}
