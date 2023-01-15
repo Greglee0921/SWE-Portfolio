@@ -6,9 +6,9 @@ export default defineType({
   type: 'document',
   fields: [
     {
-      name: 'title',
-      title: 'Title',
-      description: 'Title of skill',
+      name: 'name',
+      title: 'Name',
+      description: 'Name of skill',
       type: 'string',
     },
     {
@@ -19,12 +19,17 @@ export default defineType({
       validation: (Rule) => Rule.min(0).max(100),
     },
     {
-      name: 'image',
-      title: 'Image',
+      name: 'icon',
+      title: 'Icon',
       type: 'image',
       options: {
         hotspot: true,
       },
     },
+    {
+      name:'bgColor',
+      title:'BgColor',
+      type:'string'
+  },
   ],
 })

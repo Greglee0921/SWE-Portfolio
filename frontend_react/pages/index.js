@@ -2,26 +2,47 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 
-import { About, Contact, Experience, Header, Projects, Skills} from '../containers';
+import { About, Contact, Experience, Home, Projects, Skills} from '../containers';
 import { Navbar } from '../components';
+import { fetchSkills } from '../utils/fetchSkills';
 
-import styles from '../styles/App.module.scss'
-
-
-
-const App = () => (
-  <div className={styles.app}>
+const App = ({skills}) => (
+  <div className='app'>
     <Head>
-      <title>Greg's Portfolio</title>
+      <title>Gregory Lee's Portfolio</title>
     </Head>
     <Navbar />
-    <Header />
-    <About />
+    <section id='Home'>
+      <Home />
+    </section>
+    <section id='About'
+    className='app__container'
+    style={{alignItems: "center"}}>
+      <About />
+    </section>
     {/* <Experience /> */}
-    <Skills />
-    <Projects />
-    <Contact />
+    <section id='Skills'
+      className='app__container'>
+      <Skills skills={skills}/>
+    </section>
+    <section id='Projects'>
+      <Projects />
+    </section>
+    <section id='Contact'>
+      <Contact />
+    </section>
     </div>
     );
 
 export default App;
+
+export const getStaticProps = async () => {
+  const skills = await fetchSkills();
+
+  return {
+    props: {
+      skills
+    },
+    revalidate: 10,
+  };
+};

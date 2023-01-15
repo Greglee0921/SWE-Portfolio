@@ -1,8 +1,7 @@
 .aboutProfile {
-
   display: flex;
   justify-content: space-between;
-  padding: 5em;
+  padding: 1em;
 
 }
 
@@ -19,14 +18,9 @@
   display: flex;
   flex-direction: column;
 
-  h1 {
-    font-size: 40px;
-    margin: 0px 0px 20px;
-
     span {
       color: var(--brown-sugar);
     }
-  }
 
   p {
     box-sizing: border-box;
