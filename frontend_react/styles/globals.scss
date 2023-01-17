@@ -24,7 +24,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
+
+  section {
+    width: 100%;
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .app {
@@ -53,6 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .app__wrapper {
@@ -115,7 +123,7 @@
 .bold-text {
   font-size: 1rem;
   font-weight: 800;
-  color: var(--black-color);
+  color: var(--gainsboro);
   text-align: left;
 
   @media screen and (min-width: 2000px) {
@@ -216,3 +224,5 @@
     padding: 2rem;
   }
 }
+
+

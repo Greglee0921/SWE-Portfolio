@@ -32,7 +32,12 @@ export default defineType({
     },
     {
       name: 'linkToBuild',
-      title: 'LinkToBuild',
+      title: 'Link To Build',
+      type: 'url',
+    },
+    {
+      name: 'gitHubLink',
+      title: 'GitHub Link',
       type: 'url',
     },
   ],

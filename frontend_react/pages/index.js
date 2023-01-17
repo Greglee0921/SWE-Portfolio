@@ -4,9 +4,10 @@ import Image from 'next/image'
 
 import { About, Contact, Experience, Home, Projects, Skills} from '../containers';
 import { Navbar } from '../components';
-import { fetchSkills } from '../utils/fetchSkills';
+import { fetchSkills} from '../utils/fetchSkills';
+import { fetchProjects} from '../utils/fetchProjects';
 
-const App = ({skills}) => (
+const App = ({skills, projects}) => (
   <div className='app'>
     <Head>
       <title>Gregory Lee's Portfolio</title>
@@ -15,18 +16,14 @@ const App = ({skills}) => (
     <section id='Home'>
       <Home />
     </section>
-    <section id='About'
-    className='app__container'
-    style={{alignItems: "center"}}>
+    <section id='About'>
       <About />
     </section>
-    {/* <Experience /> */}
-    <section id='Skills'
-      className='app__container'>
+    <section id='Skills'>
       <Skills skills={skills}/>
     </section>
     <section id='Projects'>
-      <Projects />
+      <Projects projects={projects}/>
     </section>
     <section id='Contact'>
       <Contact />
@@ -38,10 +35,12 @@ export default App;
 
 export const getStaticProps = async () => {
   const skills = await fetchSkills();
+  const projects = await fetchProjects();
 
   return {
     props: {
-      skills
+      skills,
+      projects,
     },
     revalidate: 10,
   };
