@@ -5,7 +5,6 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 
 import { urlFor, sanityClient } from "../../sanity";
 import styles from "./Projects.module.scss";
-import App from "next/app";
 
 const Projects = ({ projects }) => {
   let orderedProjects = [projects[1], projects[0], projects[2]];
@@ -18,7 +17,7 @@ const Projects = ({ projects }) => {
       >
         <h2 className={styles.project__head}>Projects</h2>
 
-        <div className={styles.app__works}>
+        <div className={styles.app__projects}>
         {orderedProjects?.map((project) => (
               <div
                 className={styles.app__projectContainer}

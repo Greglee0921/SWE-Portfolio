@@ -10,7 +10,7 @@ import { fetchProjects} from '../utils/fetchProjects';
 const App = ({skills, projects}) => (
   <div className='app'>
     <Head>
-      <title>Gregory Lee's Portfolio</title>
+      <title>Gregory Lee-Software Engineer</title>
     </Head>
     <Navbar />
     <section id='Home'>

@@ -36,12 +36,6 @@ const Navbar = () => {
           fgColor='gray'
           bgColor='transparent'
         />
-         <SocialIcon
-          className='cursor-pointer'
-          network='email'
-          fgColor='gray'
-          bgColor='transparent'
-        />
       </div>
       </div>
   )

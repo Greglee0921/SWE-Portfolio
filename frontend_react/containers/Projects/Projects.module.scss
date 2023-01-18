@@ -1,4 +1,4 @@
-.app__works {
+.app__projects {
   width: 100%;
   display: flex;
 }
@@ -16,6 +16,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 80px;
 
   .app__projectItem {
     display: flex;

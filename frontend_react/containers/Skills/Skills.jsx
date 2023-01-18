@@ -6,6 +6,7 @@ import { urlFor, sanityClient } from '../../sanity';
 import styles from './Skills.module.scss';
 
 const Skills = ({skills}) => {
+  const orderedSkills = [skills[5], skills[7], skills[2], skills[1], skills[3], skills[11], skills[8], skills[10], skills[0], skills[4], skills[9], skills[6]];
 
   return (
     <>
@@ -18,7 +19,7 @@ const Skills = ({skills}) => {
     <h2 className='head-text'>Skills</h2>
     <div className={styles.app__skillsContainer}>
       <motion.div className={styles.app__skillsList}>
-        {skills?.map((skill) => (
+        {orderedSkills?.map((skill) => (
           <motion.div
             whileInView={{opacity: [0,1]}}
             transition={{duration: 0.5}}
