@@ -11,6 +11,7 @@ const App = ({skills, projects}) => (
   <div className='app'>
     <Head>
       <title>Gregory Lee-Software Engineer</title>
+      <link rel='shortcut icon' href='../assets/logo.png' />
     </Head>
     <Navbar />
     <section id='Home'>

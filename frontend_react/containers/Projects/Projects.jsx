@@ -19,6 +19,7 @@ const Projects = ({ projects }) => {
 
         <div className={styles.app__projects}>
         {orderedProjects?.map((project) => (
+
               <div
                 className={styles.app__projectContainer}
                 key={project.title}
@@ -42,6 +43,11 @@ const Projects = ({ projects }) => {
                       }}
                       className={styles.app__projectHover}
                     >
+                      <h2>{project?.title}</h2>
+                      {project.linkToBuild || project.gitHubLink ? (
+                      <div style={{display: 'flex'}}>
+                        <div className={styles.app__projectTechContainer}>
+                          </div>
                       <a
                         href={project.linkToBuild}
                         target="_blank"
@@ -70,14 +76,16 @@ const Projects = ({ projects }) => {
                           <AiFillGithub />
                         </motion.div>
                       </a>
+                      </div> ) : ('')}
+                      <div>
+                        <p className='p-text'>{project?.summary}</p>
+                      </div>
                     </motion.div>
                   </div>
                 </motion.div>
               </div>
             ))}
         </div>
-
-
       </motion.div>
       </div>
   );

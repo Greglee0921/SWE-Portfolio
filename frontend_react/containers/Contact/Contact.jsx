@@ -20,7 +20,10 @@ const Contact = () => {
         transition={{ duration: 0.8 }}
         className={styles.app__contact}
       >
-        <h2 className="head-text">Let's Get In Touch</h2>
+        <h2 className="head-text">Let's Get In&nbsp;
+        <span className='head-text'>Touch</span>
+        </h2>
+
         <p className="p-text">
           Looking to hire a software engineer? I'm your guy!
         </p>
@@ -38,34 +41,41 @@ const Contact = () => {
             </a>
           </div>
         </div>
-          {!isFormSubmitted ? (
-        <form onSubmit={handleSubmit(onSubmit)}
-          className={styles.app__contactForm}>
-          <div className="app__flex">
-            <input
-              {...register("name")}
-              className="p-text"
-              type="text"
-              placeholder="Name"
-            />
-          </div>
-          <div className="app__flex">
-            <input
-             {...register("subject")}
-            className="p-text" type="subject" placeholder="Subject" />
-          </div>
-          <div>
-            <textarea
-             {...register("message")}
-            className="p-text" placeholder="Message" />
-          </div>
-          <button type="submit" className="p-text">
-            Send Email
-          </button>
-        </form>
-          ) : (
-            <h3>Thank you for getting in touch!</h3>
-          )}
+        {!isFormSubmitted ? (
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className={styles.app__contactForm}
+          >
+            <div className="app__flex">
+              <input
+                {...register("name")}
+                className="p-text"
+                type="text"
+                placeholder="Name"
+              />
+            </div>
+            <div className="app__flex">
+              <input
+                {...register("subject")}
+                className="p-text"
+                type="subject"
+                placeholder="Subject"
+              />
+            </div>
+            <div>
+              <textarea
+                {...register("message")}
+                className="p-text"
+                placeholder="Message"
+              />
+            </div>
+            <button type="submit" className="p-text">
+              Send Email
+            </button>
+          </form>
+        ) : (
+          <h3>Thank you for getting in touch!</h3>
+        )}
       </motion.div>
     </div>
   );
