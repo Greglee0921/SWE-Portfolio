@@ -6,6 +6,12 @@
   width: 100%;
   position: absolute;
 
+  @media screen and (max-width: 450px) {
+    height: 150%;
+    background:  no-repeat center/185% url("../../assets/profile.png");
+    top: -30%;
+  }
+
 }
 
 .app__header {
@@ -42,8 +48,12 @@
   }
 
   @media screen and (max-width: 450px) {
-    padding: 6rem 1rem 2rem;
+    position: absolute;
+    top: 30%;
+
   }
+
+
 }
 
 .app__header__info {
@@ -55,6 +65,10 @@
   @media screen and (max-width: 1200px) {
     width: 100%;
     margin-right: 0rem;
+  }
+  @media screen and (max-width: 450px) {
+    margin: 0;
+
   }
 }
 
@@ -71,10 +85,30 @@
     font-size: 1.75rem;
   }
 
+  @media screen and (max-width: 450px) {
+
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 15px;
+
+  }
+
   }
   h1 {
     color: var(--chestnut);
     font-size: 45px;
+
+    @media screen and (max-width: 450px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 360px) {
+      font-size: 19px;
+
+    }
   }
+
+
 
 }

@@ -1,6 +1,9 @@
 .app__projects {
-
   display: flex;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+  }
 }
 
 .project__head {
@@ -44,8 +47,8 @@
       border-radius: 0.75rem;
     }
 
-    @media screen and (max-width: 300px) {
-      width: 100%;  
+    @media screen and (max-width: 450px) {
+      width: 100%;
       margin: 1rem;
     }
   }

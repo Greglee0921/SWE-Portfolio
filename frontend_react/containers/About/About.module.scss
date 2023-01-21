@@ -1,7 +1,14 @@
 .aboutProfile {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1em;
+
+  @media screen and (max-width: 450px) {
+   flex-direction: column;
+   padding: 0;
+  }
+
 
 }
 
@@ -12,11 +19,25 @@
   object-fit: cover;
 
   margin: 10px 50px 10px 0px;
+
+  @media screen and (max-width: 450px) {
+    height:200px;
+    width: 200px;
+    margin: 30px 0px;
+
+  }
 }
 
 .aboutInfo {
   display: flex;
   flex-direction: column;
+
+    h1 {
+      @media screen and (max-width: 450px) {
+        margin-bottom: 3px;
+      }
+
+    }
 
     span {
       color: var(--brown-sugar);
@@ -26,6 +47,11 @@
     box-sizing: border-box;
     margin: 0px 0px 20px;
     font-size: 20px;
+
+    @media screen and (max-width: 450px) {
+      font-size: 12px;
+    }
   }
+  padding: 35px;
 
 }
