@@ -33,6 +33,31 @@
       width: 180px;
       height: 40px;
     }
+
+  }
+}
+
+.hamburger{
+  width: 32px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 60px;
+  display: none;
+
+  span{
+    width: 100%;
+    height: 3px;
+    background-color: var(--gainsboro);
+    transform-origin: left;
+    transition: all 2s ease;
+  }
+
+  @media screen and (max-width: 900px) {
+    display: flex;
   }
 }
 
@@ -78,5 +103,5 @@
       transition: all 0.3s ease-in-out;
     }
   }
-  
+
 }

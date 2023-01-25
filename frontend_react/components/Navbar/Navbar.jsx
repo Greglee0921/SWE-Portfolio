@@ -7,7 +7,7 @@ import images from '../../constants';
 import styles from './Navbar.module.scss';
 import Image from 'next/image';
 
-const Navbar = () => {
+const Navbar = ({menuOpen, setMenuOpen}) => {
   return (
     <div className={styles.app__navbar}>
     <div className='app__navbarLogo'>
@@ -16,6 +16,11 @@ const Navbar = () => {
       height ={40}
       width = {40} />
       </div>
+      <div className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
       <ul className={styles.app__navbar__links}>
         {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
           <li
