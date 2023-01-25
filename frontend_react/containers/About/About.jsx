@@ -33,9 +33,9 @@ const About = () => {
       <h1 className='head-text'>About&nbsp;
         <span>Me</span>
       </h1>
-      <p >I am a software engineer with a unique background in pharmacy and prior experience from a bootcamp. My background as a pharmacy technician has provided me with a strong attention to detail and ability to problem-solve in a fast-paced environment. My bootcamp experience has given me a solid foundation in software development, including experience with multiple programming languages and a strong understanding of agile methodologies. I have a particular interest in full-stack development and have focused on learning to build full-stack applications.</p>
-      <p>In my free time, I enjoy experimenting with different recipes and techniques in the kitchen. Cooking is not only a hobby for me, but also a way to learn about different cultures and cuisines. I also enjoy playing video games as a way to unwind and relax.</p>
-      <p>I am excited to continue to grow and develop my skills in the software engineering industry, and am eager to apply my unique background to tackle new and projects.</p>
+      <p >I am a software engineer with a unique background in pharmacy and development experience from the Fullstack Academy software engineering immersive. My background as a pharmacy technician has provided me with a strong attention to detail and ability to problem-solve in a fast-paced environment. My bootcamp experience has given me a solid foundation in software development, including learning how to to build full stack applications using technologies such as React.  Additionally, it has also taught me how to program such applications in a collaborative environment.</p>
+      <p>In my free time, I enjoy experimenting with different recipes and techniques in the kitchen. Cooking is not only a hobby for me, but also a way to learn about different cultures and cuisines. I also enjoy playing strategy video games as it is a way to utilize my critical thinking skills in a more casual and fun setting.</p>
+      <p>I am excited to continue to grow and develop my skills in the software engineering industry, and am eager to apply my unique background to tackle new projects.</p>
       </motion.div>
     </div>
     </div>
