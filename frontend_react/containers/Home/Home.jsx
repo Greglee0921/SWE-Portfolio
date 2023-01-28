@@ -1,7 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
-// import pdf from '../../constants/Greg_Resume_2022.pdf'
 
 import AppWrap from "../../wrapper/AppWrap";
 import styles from "./Home.module.scss";
