@@ -28,7 +28,7 @@ const Home = () => {
             </p>
           </div>
           <a href="https://docs.google.com/document/d/e/2PACX-1vTlAoHe1kB2RD2GaBptywmkSrpUKDbtD1cGLat_UbcRlG_aYOdYVdkJbEU4WEtDKjUaBuSAOXrRQozx/pub">
-            <button>Resume</button>
+            <button>Rèsumè</button>
           </a>
         </div>
       </motion.div>
