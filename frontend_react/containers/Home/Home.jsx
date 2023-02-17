@@ -26,7 +26,9 @@ const Home = () => {
               I am a Software Engineer who loves to solve problems through code
             </p>
           </div>
-          <a href="https://docs.google.com/document/d/e/2PACX-1vTlAoHe1kB2RD2GaBptywmkSrpUKDbtD1cGLat_UbcRlG_aYOdYVdkJbEU4WEtDKjUaBuSAOXrRQozx/pub">
+          <a href="https://docs.google.com/document/d/e/2PACX-1vTlAoHe1kB2RD2GaBptywmkSrpUKDbtD1cGLat_UbcRlG_aYOdYVdkJbEU4WEtDKjUaBuSAOXrRQozx/pub"
+          target='_blank'
+          rel='noreferrer'>
             <button>Rèsumè</button>
           </a>
         </div>
