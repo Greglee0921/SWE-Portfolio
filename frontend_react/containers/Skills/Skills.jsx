@@ -6,7 +6,7 @@ import { urlFor, sanityClient } from '../../sanity';
 import styles from './Skills.module.scss';
 
 const Skills = ({skills}) => {
-  const orderedSkills = [skills[5], skills[7], skills[2], skills[1], skills[3], skills[11], skills[8], skills[10], skills[0], skills[4], skills[12], skills[9], skills[6]];
+  const orderedSkills = [skills[5], skills[7], skills[2], skills[1], skills[3], skills[11], skills[9], skills[12], skills[8], skills[0], skills[4], skills[13], skills[10], skills[6]];
 
   return (
     <>

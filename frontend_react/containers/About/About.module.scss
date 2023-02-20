@@ -4,7 +4,7 @@
   align-items: center;
   padding: 1em;
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 1200px) {
    flex-direction: column;
    padding: 0;
   }

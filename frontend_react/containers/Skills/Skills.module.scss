@@ -20,13 +20,11 @@
     repeat(5, 1fr);
 
   @media screen and (max-width: 900px) {
-    margin-right: 0;
     grid-template-columns:
     repeat(4, 1fr);
   }
 
-  @media screen and (max-width: 450px) {
-    margin-right: 0;
+  @media screen and (max-width: 650px) {
     grid-template-columns:
     repeat(3, 1fr);
   }
@@ -47,7 +45,7 @@
     background-color: #fef4f5;
 
     img {
-      height: 50%;
+      height: 65%;
     }
 
     &:hover {
