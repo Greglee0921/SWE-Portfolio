@@ -13,10 +13,10 @@ const Skills = ({skills}) => {
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.8 }}
-      className={`app__flex`}
+      className={'app__wrapper app__flex'}
     >
-      <div className='app__wrapper app__flex'>
-    <h2 className='head-text'>Skills</h2>
+      <div>
+    <div><h2 className='head-text'>Skills</h2></div>
     <div className={styles.app__skillsContainer}>
       <motion.div className={styles.app__skillsList}>
         {orderedSkills?.map((skill) => (

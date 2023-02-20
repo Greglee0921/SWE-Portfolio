@@ -5,39 +5,30 @@
 }
 
 .app__skillsContainer {
-  width: 80%;
   margin-top: 3rem;
-  padding: 0 10rem 0 14rem;
-
-
   display: flex;
-  flex-direction: row;
 
   @media screen and (max-width: 900px) {
-    width: 100%;
-    flex-direction: column;
     padding: 0;
   }
 }
 
 .app__skillsList {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns:
+    repeat(5, 1fr);
 
   @media screen and (max-width: 900px) {
     margin-right: 0;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns:
+    repeat(4, 1fr);
   }
 
   @media screen and (max-width: 450px) {
     margin-right: 0;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns:
+    repeat(3, 1fr);
   }
 }
 
@@ -45,7 +36,7 @@
   flex-direction: column;
   text-align: center;
 
-  margin: 2rem;
+  margin: 1.5rem;
 
   transition: all 0.3s ease-in-out;
 
