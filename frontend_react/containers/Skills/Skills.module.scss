@@ -16,17 +16,14 @@
 .app__skillsList {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns:
-    repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 
   @media screen and (max-width: 900px) {
-    grid-template-columns:
-    repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @media screen and (max-width: 650px) {
-    grid-template-columns:
-    repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -36,20 +33,173 @@
 
   margin: 1.5rem;
 
-  transition: all 0.3s ease-in-out;
+  &:hover {
+    div {
+      transition: all 0.8s ease-in-out;
+      outline-style: solid;
+    }
+    img {
+      border-radius: 50%;
+      transition: all 0.8s ease-in-out;
+    }
+    p {
+      transition: all 0.8s ease-in-out;
+    }
+
+    .css {
+      box-shadow: 0 0 25px 0 var(--css);
+      outline-color: var(--css);
+
+      img {
+        box-shadow: 0 0 25px 0 var(--css);
+      }
+      p {
+        color: var(--css);
+      }
+    }
+
+    .express {
+      box-shadow: 0 0 25px 0 var(--gainsboro);
+      outline-color: var(--gainsboro);
+      img {
+        box-shadow: 0 0 25px 0 var(--gainsboro);
+      }
+      p {
+        color: var(--gainsboro);
+      }
+    }
+
+    .git {
+      box-shadow: 0 0 25px 0 var(--git);
+      outline-color: var(--git);
+      img {
+        box-shadow: 0 0 25px 0 var(--git);
+      }
+      p {
+        color: var(--git);
+      }
+    }
+    .html {
+      box-shadow: 0 0 25px 0 var(--html);
+      outline-color: var(--html);
+      img {
+        box-shadow: 0 0 25px 0 var(--html);
+      }
+      p {
+        color: var(--html);
+      }
+    }
+    .js {
+      box-shadow: 0 0 25px 0 var(--js);
+      outline-color: var(--js);
+      img {
+        box-shadow: 0 0 25px 0 var(--js);
+      }
+      p {
+        color: var(--js);
+      }
+    }
+    .next {
+      box-shadow: 0 0 25px 0 var(--nextjs);
+      outline-color: var(--nextjs);
+      img {
+        box-shadow: 0 0 25px 0 var(--nextjs);
+      }
+      p {
+        color: var(--nextjs);
+      }
+    }
+    .node {
+      box-shadow: 0 0 25px 0 var(--node);
+      outline-color: var(--node);
+      img {
+        box-shadow: 0 0 25px 0 var(--node);
+      }
+      p {
+        color: var(--node);
+      }
+    }
+    .psql {
+      box-shadow: 0 0 25px 0 var(--psql);
+      outline-color: var(--psql);
+      img {
+        box-shadow: 0 0 25px 0 var(--psql);
+      }
+      p {
+        color: var(--psql);
+      }
+    }
+    .react {
+      box-shadow: 0 0 25px 0 var(--react);
+      outline-color: var(--react);
+      img {
+        box-shadow: 0 0 25px 0 var(--react);
+      }
+      p {
+        color: var(--react);
+      }
+    }
+    .redux {
+      box-shadow: 0 0 25px 0 var(--redux);
+      outline-color: var(--redux);
+      img {
+        box-shadow: 0 0 25px 0 var(--redux);
+      }
+      p {
+        color: var(--redux);
+      }
+    }
+    .sanity {
+      box-shadow: 0 0 25px 0 var(--sanity);
+      outline-color: var(--sanity);
+      img {
+        box-shadow: 0 0 25px 0 var(--sanity);
+      }
+      p {
+        color: var(--sanity);
+      }
+    }
+    .sass {
+      box-shadow: 0 0 25px 0 var(--sass);
+      outline-color: var(--sass);
+      img {
+        box-shadow: 0 0 25px 0 var(--sass);
+      }
+      p {
+        color: var(--sass);
+      }
+    }
+    .sql {
+      box-shadow: 0 0 25px 0 var(--sql);
+      outline-color: var(--sql);
+      img {
+        box-shadow: 0 0 25px 0 var(--sql);
+      }
+      p {
+        color: var(--sql);
+      }
+    }
+    .supa {
+      box-shadow: 0 0 25px 0 var(--supa);
+      outline-color: var(--supa);
+      img {
+        box-shadow: 0 0 25px 0 var(--supa);
+      }
+      p {
+        color: var(--supa);
+      }
+    }
+  }
 
   div {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #fef4f5;
+
+    background-color: var(--raisin-black);
 
     img {
-      height: 65%;
-    }
-
-    &:hover {
-      box-shadow: 0 0 25px #fef4f5;
+      height: 50%;
     }
 
     @media screen and (min-width: 2000px) {
@@ -65,7 +215,8 @@
 
   p {
     font-weight: 500;
-    margin-top: 0.5rem;
+    font-size: 16px;
+    margin-top: 0.8rem;
   }
 
   @media screen and (min-width: 2000px) {
@@ -76,5 +227,3 @@
     }
   }
 }
-
-
