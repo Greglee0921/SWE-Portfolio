@@ -4,6 +4,5 @@ export const fetchSkills = async() => {
   const data = await res.json();
   const skills = data.skills;
 
-
   return skills;
 }
