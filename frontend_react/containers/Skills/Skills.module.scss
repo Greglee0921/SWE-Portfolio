@@ -24,6 +24,7 @@
 
   @media screen and (max-width: 650px) {
     grid-template-columns: repeat(3, 1fr);
+    gap: 0;
   }
 }
 
@@ -47,7 +48,7 @@
     }
 
     .css {
-      box-shadow: 0 0 25px 0 var(--css);
+      box-shadow: 0 0 25px 15px var(--css);
       outline-color: var(--css);
 
       img {
@@ -59,7 +60,7 @@
     }
 
     .express {
-      box-shadow: 0 0 25px 0 var(--gainsboro);
+      box-shadow: 0 0 25px 15px var(--gainsboro);
       outline-color: var(--gainsboro);
       img {
         box-shadow: 0 0 25px 0 var(--gainsboro);
@@ -70,7 +71,7 @@
     }
 
     .git {
-      box-shadow: 0 0 25px 0 var(--git);
+      box-shadow: 0 0 25px 15px var(--git);
       outline-color: var(--git);
       img {
         box-shadow: 0 0 25px 0 var(--git);
@@ -80,7 +81,7 @@
       }
     }
     .html {
-      box-shadow: 0 0 25px 0 var(--html);
+      box-shadow: 0 0 25px 15px var(--html);
       outline-color: var(--html);
       img {
         box-shadow: 0 0 25px 0 var(--html);
@@ -90,7 +91,7 @@
       }
     }
     .js {
-      box-shadow: 0 0 25px 0 var(--js);
+      box-shadow: 0 0 25px 15px var(--js);
       outline-color: var(--js);
       img {
         box-shadow: 0 0 25px 0 var(--js);
@@ -100,7 +101,7 @@
       }
     }
     .next {
-      box-shadow: 0 0 25px 0 var(--nextjs);
+      box-shadow: 0 0 25px 15px var(--nextjs);
       outline-color: var(--nextjs);
       img {
         box-shadow: 0 0 25px 0 var(--nextjs);
@@ -110,7 +111,7 @@
       }
     }
     .node {
-      box-shadow: 0 0 25px 0 var(--node);
+      box-shadow: 0 0 25px 15px var(--node);
       outline-color: var(--node);
       img {
         box-shadow: 0 0 25px 0 var(--node);
@@ -120,7 +121,7 @@
       }
     }
     .psql {
-      box-shadow: 0 0 25px 0 var(--psql);
+      box-shadow: 0 0 25px 15px var(--psql);
       outline-color: var(--psql);
       img {
         box-shadow: 0 0 25px 0 var(--psql);
@@ -130,7 +131,7 @@
       }
     }
     .react {
-      box-shadow: 0 0 25px 0 var(--react);
+      box-shadow: 0 0 25px 15px var(--react);
       outline-color: var(--react);
       img {
         box-shadow: 0 0 25px 0 var(--react);
@@ -140,7 +141,7 @@
       }
     }
     .redux {
-      box-shadow: 0 0 25px 0 var(--redux);
+      box-shadow: 0 0 25px 15px var(--redux);
       outline-color: var(--redux);
       img {
         box-shadow: 0 0 25px 0 var(--redux);
@@ -150,7 +151,7 @@
       }
     }
     .sanity {
-      box-shadow: 0 0 25px 0 var(--sanity);
+      box-shadow: 0 0 25px 15px var(--sanity);
       outline-color: var(--sanity);
       img {
         box-shadow: 0 0 25px 0 var(--sanity);
@@ -160,7 +161,7 @@
       }
     }
     .sass {
-      box-shadow: 0 0 25px 0 var(--sass);
+      box-shadow: 0 0 25px 15px var(--sass);
       outline-color: var(--sass);
       img {
         box-shadow: 0 0 25px 0 var(--sass);
@@ -170,7 +171,7 @@
       }
     }
     .sql {
-      box-shadow: 0 0 25px 0 var(--sql);
+      box-shadow: 0 0 25px 15px var(--sql);
       outline-color: var(--sql);
       img {
         box-shadow: 0 0 25px 0 var(--sql);
@@ -180,7 +181,7 @@
       }
     }
     .supa {
-      box-shadow: 0 0 25px 0 var(--supa);
+      box-shadow: 0 0 25px 15px var(--supa);
       outline-color: var(--supa);
       img {
         box-shadow: 0 0 25px 0 var(--supa);

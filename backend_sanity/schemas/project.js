@@ -31,6 +31,11 @@ export default defineType({
       of: [{ type: 'reference', to: { type: 'skill'} }],
     },
     {
+      name: 'techStack',
+      title: 'Tech Stack',
+      type: 'text',
+    },
+    {
       name: 'linkToBuild',
       title: 'Link To Build',
       type: 'url',
