@@ -55,7 +55,8 @@ const Projects = ({ projects }) => {
                         ease: "easeInOut",
                         staggerChildren: 0.5,
                       }}
-                      className={styles.app__projectHover}
+                      className={styles[project.title]}
+
                     >
                       <div className={styles.app__projectTitle}>
                         <h2>{project?.title}</h2>
