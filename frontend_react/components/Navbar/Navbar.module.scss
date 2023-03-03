@@ -64,10 +64,11 @@
 .app__navbar__links {
   flex: 1;
   display: flex;
-  margin-left: 80px;
-  justify-content: center;
+  margin-left: 60px;
+  // justify-content: center;
   align-items: center;
   list-style: none;
+  font-weight: 900;
 
   li {
     margin: 1rem 2rem 1rem 1rem;
@@ -76,7 +77,7 @@
     flex-direction: column;
 
     a {
-      color: var(--bole);
+      color: var(--brown-sugar);
       text-decoration: none;
       flex-direction: column;
 
@@ -96,12 +97,18 @@
 
 }
 
-.socials {
-  svg {
+  .linkedin {
+    border-radius: 50%;
     &:hover {
-      background-color:var(--gainsboro);
-      transition: all 0.3s ease-in-out;
+      background-color:#0B65C2;
+      transition: all 0.8s ease-in-out;
     }
   }
 
-}
+  .github {
+    border-radius: 50%;
+    &:hover {
+      background-color:#2BA44E;
+      transition: all 0.8s ease-in-out;
+    }
+  }

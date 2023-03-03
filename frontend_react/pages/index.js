@@ -22,14 +22,14 @@ const App = ({skills, projects}) => {
     <section id='Home'>
       <Home />
     </section>
-    <section id='About'>
-      <About />
+    <section id='Projects'>
+      <Projects projects={projects}/>
     </section>
     <section id='Skills'>
       <Skills skills={skills}/>
     </section>
-    <section id='Projects'>
-      <Projects projects={projects}/>
+    <section id='About'>
+      <About />
     </section>
     <section id='Contact'>
       <Contact />

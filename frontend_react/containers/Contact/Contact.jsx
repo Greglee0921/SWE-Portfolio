@@ -27,10 +27,12 @@ const Contact = () => {
         <p className="p-text">
           Looking to hire a software engineer? I'm your guy!
         </p>
+        <div className={styles.app__contactContainer}>
         <div className={styles.app__contactCards}>
           <div className={styles.app__contactCard}>
             <img src="/assets/email_image.png" alt="email" />
-            <a href="mailto:greglee0921@gmail.com" className="p-text">
+            <a style={{fontSize: '10px'}}
+            href="mailto:greglee0921@gmail.com" className="p-text">
               greglee0921@gmail.com
             </a>
           </div>
@@ -76,6 +78,7 @@ const Contact = () => {
         ) : (
           <h3>Thank you for getting in touch!</h3>
         )}
+        </div>
       </motion.div>
     </div>
   );

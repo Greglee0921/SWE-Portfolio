@@ -2,7 +2,7 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--brown-sugar);
+  color: var(--gainsboro);
   text-transform: capitalize;
 }
 
@@ -19,18 +19,12 @@
   align-items: center;
   margin-top: 30px;
 
-  .app__projectItem {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--gainsboro);
-    color: #000;
+}
 
-    transition: all 0.3s ease;
-
-    &:hover {
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    }
-  }
+.app__projectItem {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--gainsboro);
 }
 
 .app__projectImg {

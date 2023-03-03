@@ -5,36 +5,45 @@
   width: 100%;
   flex-direction: column;
   span {
-    color: var(--bole)
+    color: var(--gainsboro);
   }
 
   p {
+    font-weight: 800;
     margin-top: 10px;
   }
 
   @media screen and (max-width: 768px) {
-    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
   }
 }
 
-.app__contactCards {
-  width: 60%;
+.app__contactContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  // width: 50%;
+}
+
+.app__contactCards {
+  display: flex;
+  // justify-content: space-evenly;
+  // align-items: center;
   margin: 2em 2rem 1rem;
+  gap: 1em;
+
 
   .app__contactCard {
-    min-width: 290px;
+    // min-width: 260px;
+    // max-width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    gap: .3rem;
 
-
-    margin: 1rem 0;
-    padding: 1rem;
+    // margin: 1rem 0;
+    padding: .5rem;
     border-radius: 10px;
     cursor: pointer;
     background-color: #fef4f5;
@@ -42,31 +51,31 @@
     transition: all 0.3s ease-in-out;
 
     img {
-      width: 40px;
-      height: 40px;
-      margin: 0 0.7rem;
+      width: 35px;
+      height: 35px;
+      // margin: 0 1rem;
     }
 
     p {
-      font-weight: 500;
+      font-weight: 800;
     }
     a {
       text-decoration: none;
-      font-weight: 500;
-      color: var(--bole);
+      font-weight: 700;
+      color: black;
     }
     &:hover {
       box-shadow: 0 0 25px #fef4f5;
     }
 
-    @media screen and (max-width: 450px) {
-      width: 100%;
-    }
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    margin: 0;
+    margin-top:16px;
   }
+
+
 }
 
 .app__contactCards .app__contactCard:last-child {
@@ -78,7 +87,7 @@
 }
 
 .app__contactForm {
-  width: 25%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,9 +110,9 @@
       padding: 0.95rem;
       border: none;
       border-radius: 7px;
-      background-color: var(--brown-sugar);
+      background-color: white;
 
-      color: var(--gainsboro);
+      color: black;
       outline: none;
 
       &:hover {
@@ -124,13 +133,13 @@
     margin-top: 5px;
     border-radius: 10px;
     border: none;
-    background-color: var(--bole);
+    background-color: var(--brown-sugar);
 
     font-weight: 500;
-    color: var(--gainsboro);
+    color: white;
     outline: none;
 
-    font-family: var(--font-base);
+    // font-family: var(--font-base);
 
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
     cursor: pointer;

@@ -1,5 +1,5 @@
 .home {
-  background: no-repeat right/ 60% url("../../assets/profile.png");
+  background: no-repeat right/ 50% url("../../assets/profile.png");
 
   color: var(--gainsboro);
   height: 100vh;
@@ -83,10 +83,12 @@
 
   p {
     font-size: 17px;
+    font-weight: 800;
     text-align: left;
     color: var(--gainsboro);
     line-height: 1.5;
     margin-top: 20px;
+    width: 80%;
 
   @media screen and (min-width: 2000px) {
     font-size: 1.75rem;
@@ -103,8 +105,9 @@
 
   }
   h1 {
-    color: var(--chestnut);
-    font-size: 45px;
+    color: var(--brown-sugar);
+    font-size: 40px;
+    font-weight: 800;
 
     @media screen and (max-width: 450px) {
       font-size: 20px;

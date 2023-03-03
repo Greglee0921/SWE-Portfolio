@@ -22,7 +22,7 @@ const Navbar = ({menuOpen, setMenuOpen}) => {
             <span className="line3"></span>
           </div>
       <ul className={styles.app__navbar__links}>
-        {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+        {['Home', 'Projects', 'Skills', 'About', 'Contact'].map((item) => (
           <li
             key={`link-${item}`}>
             <div />
@@ -32,13 +32,15 @@ const Navbar = ({menuOpen, setMenuOpen}) => {
       </ul>
       <div className={styles.socials}>
         <SocialIcon
+        className={styles.linkedin}
           url="https://www.linkedin.com/in/gregorylee7/"
-          fgColor='gray'
+          fgColor='white'
           bgColor='transparent'
         />
         <SocialIcon
+          className={styles.github}
           url="https://github.com/Greglee0921"
-          fgColor='gray'
+          fgColor='white'
           bgColor='transparent'
         />
       </div>
