@@ -35,13 +35,13 @@ const Navbar = ({menuOpen, setMenuOpen}) => {
         className={styles.linkedin}
           url="https://www.linkedin.com/in/gregorylee7/"
           fgColor='white'
-          bgColor='transparent'
+          // bgColor='#bb6944'
         />
         <SocialIcon
           className={styles.github}
           url="https://github.com/Greglee0921"
           fgColor='white'
-          bgColor='transparent'
+          bgColor='#2BA44E'
         />
       </div>
       </div>

@@ -97,9 +97,15 @@
 
 }
 
+.socials {
+  display: flex;
+  gap: .5rem;
+}
+
   .linkedin {
     border-radius: 50%;
     &:hover {
+      transform: translateY(-5px);
       background-color:#0B65C2;
       transition: all 0.8s ease-in-out;
     }
@@ -109,6 +115,7 @@
     border-radius: 50%;
     &:hover {
       background-color:#2BA44E;
+      transform: translateY(-5px);
       transition: all 0.8s ease-in-out;
     }
   }
